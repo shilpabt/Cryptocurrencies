@@ -7,11 +7,11 @@ To group the cryptocurrencies, we will use clustering algorithm and will use dat
 
 ## Resources
 
-Python
-Scikit-learn 1.1.0
-Plotly Express
-hvPlot 
-Pandas
+Python  
+Scikit-learn 1.1.0  
+Plotly Express  
+hvPlot   
+Pandas  
 
 
 # Results  
@@ -20,41 +20,41 @@ Preprocessed dataset using Pandas, in order to perform PCA
 
    Crypto data                        |  Preprocessed data
 :------------------------------------:|:-------------------------:
-![](images/crypto_data.png?raw=true)  |  ![](images/preprocessed_data.png?raw=true)
+![](Images/crypto_data.png?raw=true)  |  ![](Images/preprocessed_data.png?raw=true)
 
 
 ## Deliverable 2: Reducing Data Dimensions Using PCA   
 Using your knowledge of how to apply the Principal Component Analysis (PCA) algorithm, reduced the dimensions of the X DataFrame to three principal components and placed these dimensions in a new DataFrame.
 
-![](images/reduced_data_dimensions.png?raw=true)
+![](Images/reduced_data_dimensions.png?raw=true)
 
 
 ## Deliverable 3: Clustering Cryptocurrencies Using K-means
 Finding the Best Value for 'k' Using the Elbow Curve
-![](images/Elbow_curve.png?raw=true)
+![](Images/Elbow_curve.png?raw=true)
 
 Created a new DataFrame including predicted clusters and cryptocurrencies features and concatentated the crypto_df and pcs_df DataFrames on the same columns.
 
-![](images/clustered_data.png?raw=true)
+![](Images/clustered_data.png?raw=true)
 
 ## Deliverable 4: Visualizing Cryptocurrencies Results
 
 Created a 3D scatter plot using the Plotly Express scatter_3d() function to plot the three clusters from the clustered_df DataFrame.
 
-![](images/3D_cluster.png?raw=true)
+![](Images/3D_cluster.png?raw=true)
 
 
 Using the knowledge of creating scatter plots with Plotly Express and hvplot,visualize the distinct groups that correspond to the three principal components created in Deliverable 2, then created a table with all the currently tradable cryptocurrencies using the hvplot.table() function.
 
-![](images/tradable_cryptocurrencies.png?raw=true)
+![](Images/tradable_cryptocurrencies.png?raw=true)
 
 Scaled the TotalCoinSupply and TotalCoinsMined columns between the given range of zero and one using the MinMaxScaler().fit_transform method.
 
-![](images/new_clustered_data.png?raw=true)
+![](Images/new_clustered_data.png?raw=true)
 
 Created hvplot scatter plot with x="TotalCoinsMined", y="TotalCoinSupply", and by="Class", and it shows the CoinName when you hover over the the data point.
 
-![](images/scattered_plot.png?raw=true)
+![](Images/scattered_plot.png?raw=true)
 
 
 
